@@ -81,6 +81,16 @@
             border-width: 2px;
         }
 
+        .face {
+            float: right;
+            width: 200px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+            margin: 0 auto;
+            padding: 15px;
+            text-align: center;
+            border-style: solid;
+            border-width: 2px;
+        }
+
         .infor {
 
             font-size: 13pt;
@@ -159,7 +169,7 @@
             <a href="#">
                 <img src=모습.jpg
                      width="500" height="750"> <br />
-                <em><h2>++ 옷을 입은 내 모습 (사진 클릭) ++</h2></em>
+            <h2><em>++ 옷을 입은 내 모습 (사진 클릭) ++</em></h2>
 
             </a>
         </div>
@@ -188,7 +198,9 @@
                 &emsp;&emsp;&emsp;&nbsp;&nbsp; 72000 won
             </strong> <br><br><br>
 
-            <form>
+            <div class="face" , style=" cursor: pointer;" onclick="location.href='';">얼굴 사진 등록하기</div>
+
+            <form style="float:left;">
                 <strong>SIZE  : </strong>
                 <input type="radio" name="SIZE" value="S">S
                 <input type="radio" name="SIZE" value="M">M
@@ -196,6 +208,10 @@
                 <input type="radio" name="SIZE" value="XL">XL
             </form>
 
+
+
+            <br>
+            <br>
             <br>
             <hr />
             <br>
@@ -205,6 +221,7 @@
 
 
             <br><br>
+
             <div class="thin" , style=" cursor: pointer;" onclick="location.href='';">Buy & Matching</div>
             <div class="thin" , style=" cursor: pointer;" onclick="location.href='';">Add to cart</div>
 
