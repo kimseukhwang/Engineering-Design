@@ -9,6 +9,7 @@
             margin: 0;
         }
 
+
         .nav {
             display: inline-block;
             width: 100%;
@@ -52,6 +53,15 @@
             margin: auto;
         }
 
+        .face {
+            width: 200px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+            margin: 0 auto;
+            padding: 15px;
+            text-align: center;
+            border-style: solid;
+            border-width: 2px;
+        }
+
         a:link {
             text-decoration: none;
             color: black;
@@ -64,48 +74,38 @@
             background-color: white;
         }
 
-
+        #box {
+            width: 1200px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+            margin: 0 auto;
+            padding: 0;
+            border-style: solid;
+            border-width: 2px;
+    
+        }
 
         .picture {
-            padding-top: 50px;
-            padding-right: 30px;
-            padding-left: 100px;
+
+            padding-top: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
-
-        .thin {
-
-            margin: 10px;
-            padding: 15px;
+        #content_first {
+            line-height: 35pt;
+            background-color: black;
             text-align: center;
-            border-style: solid;
-            border-width: 2px;
+            height: 50px;
+            color: white;
         }
-
-        .face {
-            float: right;
-            width: 200px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
-            margin: 0 auto;
-            padding: 15px;
+        #content_a {
+            font-size: 20px;
             text-align: center;
-            border-style: solid;
-            border-width: 2px;
-        }
-
-        .infor {
-            position: sticky;
-            font-size: 13pt;
-            padding-top: 150px;
-            padding-right: 30px;
-            padding-left: 10px;
-            text-align: left;
         }
 
         #content {
-
             width: 100%;
             background-color: white;
-            float: left;
-            height: 1000px;
+            float: right;
+            height: 600px;
             color: black;
             padding-top: 50px;
             text-align: center;
@@ -140,20 +140,21 @@
     </style>
 </head>
 <body>
+
     <div id="wrapper">
         <nav class="nav" style="top: 0px;">
             <ul>
                 <li><a href="about">ABOUT</a></li>
                 <li><a href="shop">SHOP</a></li>
                 <li><a href="cummunity">COMMUNITY</a></li>
-                <li><a href="servey">SURVEY</a></li>
+                <li><a href="servey">SERVEY</a></li>
             </ul>
 
             <div><a href="cart">CART</a></div>
             <div><a href="my page">MY PAGE</a></div>
             <div><a href="join">JOIN</a></div>
             <div><a href="login">LOGIN</a></div>
-            <a href="file:///C:/Users/user/Documents/GitHub/Engineering-Design/Project1/HTMLPage1.html" , alt>
+            <a href="file:///C:/Users/user/Documents/GitHub/Engineering-Design/Project1/HTMLPage1.html">
                 <center>
                     <div>
                         <img src=CS.png
@@ -164,82 +165,29 @@
         </nav>
     </div>
 
+    <br /><br /><br /><br />
 
-    <div id="content">
+    <div id="box">
+        <div id="content_first">Shop Matching</div>
+        <p id="content_a">선택하신 옷 사이즈를 직접 맞출 수 있는 근처 옷 매장을 검색합니다. </p>
 
-        <div class="picture" style="float: left;">
+        <div class="picture">
             <a href="#">
-                <img src=모습.jpg
-                     width="500" height="750"> <br />
-                <h2><em>++ 옷을 입은 내 모습 (사진 클릭) ++</em></h2>
-
+                <img src=지도.jpg
+                    width="1100" height="700"> <br />
             </a>
         </div>
 
-        <div class="picture" style="float: left;">
-            <a href="#">
-                <img src=123.jpg
-                     width="450" height="900">
+    <br /><br />
 
-            </a>
-        </div>
+        <div class="face" , style=" cursor: pointer;" onclick="location.href='';">돌아가기</div>
 
+    <br /><br />
 
-
-        <div class="infor" style="float: right;">
-
-            <h3><strong>클래식 시그니쳐 슬림 자켓 <br> (Classic Signatuer Slim Jacket)</strong></h3> <br>
-
-            필로그램의 독점 원단으로 제작 된 클래식 청자켓. <br>
-            사계절 착용에 적합한 중청 컬러. <br>
-            고급원사를 사용해 두께감에 비해 가볍고 착용감이 좋고 부드러움. <br>
-            레귤러 기장감으로 몸에 잘 맞는 슬림한 핏으로 겨울 코트와 코디하기 좋음. <br><br><br>
-
-            <strong>
-                Price : <strike>117000 won </strike> <br>
-                &emsp;&emsp;&emsp;&nbsp;&nbsp; 72000 won
-            </strong> <br><br><br>
-
-            <div class="face" , style=" cursor: pointer;" onclick="location.href='';">얼굴 사진 등록하기</div>
-
-            <form style="float:left;">
-                <strong>SIZE  : </strong>
-                <input type="radio" name="SIZE" value="S">S
-                <input type="radio" name="SIZE" value="M">M
-                <input type="radio" name="SIZE" value="L">L
-                <input type="radio" name="SIZE" value="XL">XL
-            </form>
-
-
-
-            <br>
-            <br>
-            <br>
-            <hr />
-            <br>
-
-            <p style="text-align:right"><strong>총 상품금액(수량) : 0(0개)</strong></p>
-
-
-
-            <br><br>
-
-            <div class="thin" , style=" cursor: pointer;" onclick="location.href='';">Buy & Matching</div>
-            <div class="thin" , style=" cursor: pointer;" onclick="location.href='';">Add to cart</div>
-
-
-
-
-        </div>
 
     </div>
 
-
-
-
-
-
-
+    <br /><br /><br /><br />
 
     <div id="footer">
         <div class="name" style="float: left;">
@@ -272,6 +220,7 @@
             사업자등록번호 : 없음
         </div>
     </div>
+
 
 </body>
 </html>
