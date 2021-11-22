@@ -1,14 +1,13 @@
-ï»¿ï»¿
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>CS shop</title>
-
     <style>
         body {
             margin: 0;
         }
-
 
         .nav {
             display: inline-block;
@@ -18,7 +17,7 @@
             font-weight: bold;
             font-size: 15pt;
             height: 50px;
-            padding-top: 10px;
+            padding-top: 0px;
         }
 
             .nav > div {
@@ -53,13 +52,12 @@
             margin: auto;
         }
 
-        .face {
-            width: 200px; /* ì •ë ¬í•˜ë ¤ëŠ” ìš”ì†Œì˜ ë„“ì´ë¥¼ ë°˜ë“œì‹œ ì§€ì • */
-            margin: 0 auto;
-            padding: 15px;
-            text-align: center;
-            border-style: solid;
-            border-width: 2px;
+        .box {
+            width: 50%;
+            height: 700px;
+            border: 1px solid black;
+            font-size: 20px;
+            margin-left: 430px;
         }
 
         a:link {
@@ -74,42 +72,38 @@
             background-color: white;
         }
 
-        #box {
-            width: 1200px; /* ì •ë ¬í•˜ë ¤ëŠ” ìš”ì†Œì˜ ë„“ì´ë¥¼ ë°˜ë“œì‹œ ì§€ì • */
-            margin: 0 auto;
-            padding: 0;
-            border-style: solid;
-            border-width: 2px;
-    
-        }
-
         .picture {
-
-            padding-top: 20px;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-        #content_first {
-            line-height: 35pt;
-            background-color: black;
-            text-align: center;
-            height: 50px;
-            color: white;
-        }
-        #content_a {
-            font-size: 20px;
-            text-align: center;
+            padding-top: 50px;
+            padding-right: 80px;
+            padding-left: 90px;
         }
 
         #content {
             width: 100%;
             background-color: white;
             float: right;
-            height: 600px;
+            height: 1000px;
             color: black;
             padding-top: 50px;
             text-align: center;
-            padding-right: 30px;
+        }
+
+        .button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .form {
+            font-size: 15px;
         }
 
         .cs {
@@ -140,11 +134,10 @@
     </style>
 </head>
 <body>
-
     <div id="wrapper">
         <nav class="nav" style="top: 0px;">
             <ul>
-                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="About.html">ABOUT</a></li>
                 <li><a href="Shop.html">SHOP</a></li>
                 <li><a href="Community.html">COMMUNITY</a></li>
                 <li><a href="survey.html">SURVEY</a></li>
@@ -163,64 +156,48 @@
                 </center>
             </a>
         </nav>
+        <div id="content">
+            <h2 style="margin-right:60px ;">MY PAGE</h2>
+            <div class="box" style="padding: 10px 10px 10px 10px;">
+                <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <div class="picture">Ãß°¡ ¿¹Á¤<br /></div>
+
+            </div>
+
+        </div>
+        <br /><br />
+        <div id="footer">
+            <div class="name" style="float: left;">
+                <div>CS</div>
+            </div>
+            <div class="privacy" style="float: left;">
+                <h2>CS Center</h2><br>
+
+                02- 2238-3804<br>
+                ÆòÀÏ AM 10:00- PM 4:00<br>
+                Á¡½É PM 1:00- PM 2:00<br>
+                ÈŞ¹« ÁÖ¸»&°øÈŞÀÏ ÈŞ¹«
+
+            </div>
+            <div class="privacy" style="float: left;">
+                <h2>Bank Info</h2><br>
+
+                »ó¸íÀºÇà 123-45678-90123<br>
+                CSÀºÇà 454645-01-123123<br>
+                ¿¹±İÁÖ : °ø¼³ÀÔ<br><br>
+                <strong>¹è¼Û¾È³»</strong><br>
+                CSÅÃ¹è 1234-1234
+            </div>
+
+            <div class="privacy" style="float: left;">
+                <h2>Company Info</h2><br>
+
+                CS SHOP | ´ëÇ¥ÀÚ »ó¸í´ë<br>
+                ÁÖ¼Ò : ¼­¿ïÄ·ÆÛ½º (03016) ¼­¿ï½Ã Á¾·Î±¸ È«Áö¹® 2±æ 10 »ó¸í´ëÇĞ±³ <br>
+                »ç¾÷ÀÚµî·Ï¹øÈ£ : ¾øÀ½
+            </div>
+        </div>
+
     </div>
-
-    <br /><br /><br /><br />
-
-    <div id="box">
-        <div id="content_first">Shop Matching</div>
-        <p id="content_a">ì„ íƒí•˜ì‹  ì˜· ì‚¬ì´ì¦ˆë¥¼ ì§ì ‘ ë§ì¶œ ìˆ˜ ìˆëŠ” ê·¼ì²˜ ì˜· ë§¤ì¥ì„ ê²€ìƒ‰í•©ë‹ˆë‹¤. </p>
-
-        <div class="picture">
-            <a href="#">
-                <img src=ì§€ë„.jpg
-                    width="1100" height="700"> <br />
-            </a>
-        </div>
-
-    <br /><br />
-
-        <div class="face" , style=" cursor: pointer;" onclick="location.href='Cloth_infor.html';">ëŒì•„ê°€ê¸°</div>
-
-    <br /><br />
-
-
-    </div>
-
-    <br /><br /><br /><br />
-
-    <div id="footer">
-        <div class="name" style="float: left;">
-            <div>CS</div>
-        </div>
-        <div class="privacy" style="float: left;">
-            <h2>CS Center</h2><br>
-
-            02- 2238-3804<br>
-            í‰ì¼ AM 10:00- PM 4:00<br>
-            ì ì‹¬ PM 1:00- PM 2:00<br>
-            íœ´ë¬´ ì£¼ë§&ê³µíœ´ì¼ íœ´ë¬´
-
-        </div>
-        <div class="privacy" style="float: left;">
-            <h2>Bank Info</h2><br>
-
-            ìƒëª…ì€í–‰ 123-45678-90123<br>
-            CSì€í–‰ 454645-01-123123<br>
-            ì˜ˆê¸ˆì£¼ : ê³µì„¤ì…<br><br>
-            <strong>ë°°ì†¡ì•ˆë‚´</strong><br>
-            CSíƒë°° 1234-1234
-        </div>
-
-        <div class="privacy" style="float: left;">
-            <h2>Company Info</h2><br>
-
-            CS SHOP | ëŒ€í‘œì ìƒëª…ëŒ€<br>
-            ì£¼ì†Œ : ì„œìš¸ìº í¼ìŠ¤ (03016) ì„œìš¸ì‹œ ì¢…ë¡œêµ¬ í™ì§€ë¬¸ 2ê¸¸ 10 ìƒëª…ëŒ€í•™êµ <br>
-            ì‚¬ì—…ìë“±ë¡ë²ˆí˜¸ : ì—†ìŒ
-        </div>
-    </div>
-
-
 </body>
 </html>

@@ -1,8 +1,9 @@
+﻿﻿
 <!DOCTYPE html>
 <html>
 <head>
     <title>CS shop</title>
-    <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+    
     <style>
         body {
             margin: 0;
@@ -63,11 +64,13 @@
             background-color: white;
         }
 
-        .login{
-            align-content: center;
-            padding-top: 150px;       
-         }
-        
+
+
+        .picture {
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-left: 90px;
+        }
 
         #content {
             width: 100%;
@@ -79,7 +82,11 @@
             text-align: center;
             padding-right: 30px;
         }
-        
+
+        .cs {
+            padding-right: 150px;
+        }
+
         .name {
             padding-left: 25px;
             padding-top: 30px;
@@ -101,54 +108,91 @@
             clear: both;
             color: white;
         }
-
-       
     </style>
 </head>
 <body>
-    <div>
+    <div id="wrapper">
         <nav class="nav" style="top: 0px;">
             <ul>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="Shop.html">SHOP</a></li>
+                  <li><a href="Shop.html">SHOP</a></li>
                 <li><a href="Community.html">COMMUNITY</a></li>
                 <li><a href="survey.html">SURVEY</a></li>
             </ul>
 
-            <div><a href="Cart.html">CART</a></div>
-            <div><a href="MyPage.html">MY PAGE</a></div>
+        <div><a href="Cart.html">CART</a></div>
+             <div><a href="MyPage.html">MY PAGE</a></div>
             <div><a href="join.html">JOIN</a></div>
             <div><a href="login.html">LOGIN</a></div>
             <a href="HTMLPage1.html">
-                <div style="text-align: center;">
-                    <img src=CS.png
-                         width="150" height="50" style="padding-right : 150px">
-                </div>
+                <center>
+                    <div>
+                        <img src=CS.png
+                             width="150" height="50" style="padding-right : 150px">
+                    </div>
+                </center>
             </a>
         </nav>
+        <div id="content" >
+           <h2 >추천 아이템</h2>
+            <div class="picture" style="float: left;">
+                <a href="Cloth_infor.html">
+                    <img src=c49b0ea8658bedd5c88b6b4db1102e55.jpg
+                         width="250" height="350">
+                    <div class="p">
+                        <strong>클래식 시그니쳐 슬림 자켓</strong><br>
+                        <strike>가격 : 117000원</strike><br>
+                        할인가: 72000원
 
 
-        <div class="login">
-            <h5 style="text-align: center;">로그인</h5>
-            <hr color="black">
-            <div style="padding-top: 100px; padding-bottom: 200px; text-align: center;">
-                <h1>&emsp;&emsp;&emsp;회원로그인</h1>
-                <ul style="list-style: none;">
-                    <li><input type="text" name="ID" placeholder="아이디" style="padding: 8px;"><br></li>
-                    <li><input type="text" name="PW" placeholder="비밀번호" style="padding: 8px;"><br></li>
-                    <li><button type="submit" style="position: relative; left: 150px; bottom: 70px; padding: 25px;">로그인</button></li>
-                    <li><button style="position: relative; right: 50px; bottom: 60px;" a href="아이디찾는곳으로 이동">아이디찾기</a></button></li>
-                    <li><button style="position: relative; left: 100px; bottom: 85px;" a href="비밀번호 찾는곳으로 이동">비밀번호찾기</button></a></li>
-                </ul>
-
+                    </div>
+                </a>
             </div>
-            <hr color="black">
+
+            <div class="picture" style="float: left;">
+                <a href="#">
+                    <img src=5ba23bdf28a71648d404fa58c134b28c.jpg
+                         width="250" height="350">
+                    <div class="p"><strong>[기모]옐로우 라이프 빅 후드티(Black)</strong></div>
+
+                    <strike>가격 : 88000원</strike><br>
+                    할인가: 50000원
+                </a>
+            </div>
+             <div class="picture" style="float: left;">
+                <a href="#">
+                    <img src=4188e4455fe16b838c3b046aab8a4135.jpg
+                         width="250" height="350">
+                    <div class="p"><strong>블랙 스노우 시그니쳐 중통 일자</strong></div>
+                
+                    <strike>가격 : 98000원</strike><br>
+                    할인가: 70000원
+                </a>
+            </div> <div class="picture" style="float: left;">
+                <a href="#">
+                    <img src=89b00260ae6e89804ef446172819c082.jpg
+                         width="250" height="350">
+                    <div class="p">
+                        <strong>블랙스노우 시그니쳐 자켓</strong><br>
+                        <strike>가격 : 120000원</strike><br>
+                        할인가: 75000원
+
+
+                    </div>
+                </a>
+            </div> <div class="picture" style="float: left;">
+                <a href="#">
+                    <img src=57913ec1f870170a99d676f6d0380f2d.jpg
+                         width="250" height="350">
+                    <div class="p"><strong>퍼플 시그니쳐 중통 일자</strong></div>
+                
+                    <strike>가격 : 97000원</strike><br>
+                    할인가: 67000원
+                
+                </a>
+            </div>
+
         </div>
-
-
-
-
-
 
         <div id="footer">
             <div class="name" style="float: left;">
