@@ -17,7 +17,7 @@
             font-weight: bold;
             font-size: 15pt;
             height: 50px;
-            padding-top: 0px;
+            padding-top: 10px;
         }
 
             .nav > div {
@@ -53,13 +53,13 @@
         }
 
         .box {
-            width: 50%;
+            width: 35%;
             height: 700px;
             border: 1px solid black;
             font-size: 20px;
-            margin-left: 430px;
-            background-color: black;
-            color: yellow;
+            margin-left: 645px;
+            background-color: #231f20;
+            color: #fdd000;
             margin-top: 30px;
             font-weight: bold;
         }
@@ -77,9 +77,10 @@
         }
 
         .picture {
-            padding-top: 50px;
+            padding-top: 15px;
             padding-right: 80px;
             padding-left: 90px;
+            font-size: 25px
         }
 
         #content {
@@ -115,11 +116,11 @@
         }
 
         .name {
-            padding-left: 25px;
-            padding-top: 30px;
+            padding-left: 35px;
+            padding-top: 0px;
             font-size: 50px;
             width: 140px;
-            height: 64px;
+            height: 80px;
             font-weight: bold;
         }
 
@@ -134,6 +135,9 @@
             height: 300px;
             clear: both;
             color: white;
+        }
+        .ftcolor {
+            color: gray;
         }
     </style>
 </head>
@@ -151,7 +155,7 @@
             <div><a href="MyPage.html">MY PAGE</a></div>
             <div><a href="join.html">JOIN</a></div>
             <div><a href="login.html">LOGIN</a></div>
-            <a href="HTMLPage1.html">
+            <a href="main.html">
                 <center>
                     <div>
                         <img src=CS.png
@@ -161,50 +165,60 @@
             </a>
         </nav>
         <div id="content">
-            <h2 style="margin-right:60px ;">ABOUT</h2>
+            <h2 style="margin: 50px 60px 0px 0px; ">ABOUT</h2>
             <div class="box" style="padding: 10px 10px 10px 10px;">
-                <div class="picture" style="float: left;">공학설계입문</div>
-                <div class="picture" style="float: right;">CS조</div><br /><br /><br /><br /><br />
-                <div class="picture" >조원<br /></div>
+                <div class="picture" style="float: left;"><h6>공학설계입문</h6></div>
+                <div class="picture" style="float: right;"><h5>CS조</h5></div><br /><br /><br /><br /><br />
+
+                <div class="picture"><h2>조   원</h2></div>
                 <div class="picture">202110915 김용범<br /></div>
-                <div class="picture" >201710901 김석황<br /></div>
-                <div class="picture" >201810990 장현호<br /></div>
-                <div class="picture" >201710959 이재경<br /></div>
+                <div class="picture">201710901 김석황<br /></div>
+                <div class="picture">201810990 장현호<br /></div>
+                <div class="picture">201710959 이재경<br /><br /><br /><br /></div>
+
+                <div class="picture">자신이 선호하는 스타일을 찾기위해 개인의 신체적 조건과 취향에 따라 알맞는 옷을 추천해주자<br /></div>
             </div>
            
         </div>
             <br/><br />
-        <div id="footer">
-            <div class="name" style="float: left;">
-                <div>CS</div>
-            </div>
-            <div class="privacy" style="float: left;">
-                <h2>CS Center</h2><br>
+                 <div id="footer">
+                     <div class="name" style="float: left;">
+                         <div><h2>CS</h2></div>
+                     </div>
+                     <div class="privacy" style="float: left;">
+                         <h2>CS Center</h2><br>
+                         <div class="ftcolor">
+                             02- 2238-3804<br>
+                             평일 AM 10:00- PM 4:00<br>
+                             점심 PM 1:00- PM 2:00<br>
+                             휴무 주말&공휴일 휴무
+                         </div>
 
-                02- 2238-3804<br>
-                평일 AM 10:00- PM 4:00<br>
-                점심 PM 1:00- PM 2:00<br>
-                휴무 주말&공휴일 휴무
 
-            </div>
-            <div class="privacy" style="float: left;">
-                <h2>Bank Info</h2><br>
+                     </div>
+                     <div class="privacy" style="float: left;">
+                         <h2>Bank Info</h2>
+                         <div class="ftcolor">
+                             상명은행 123-45678-90123<br>
+                             CS은행 454645-01-123123<br>
+                             예금주 : 공설입<br><br>
+                         </div>
 
-                상명은행 123-45678-90123<br>
-                CS은행 454645-01-123123<br>
-                예금주 : 공설입<br><br>
-                <strong>배송안내</strong><br>
-                CS택배 1234-1234
-            </div>
+                         <strong>배송안내</strong><br><br>
+                         <div class="ftcolor">
+                             CS택배 1234-1234
+                         </div>
+                     </div>
 
-            <div class="privacy" style="float: left;">
-                <h2>Company Info</h2><br>
-
-                CS SHOP | 대표자 상명대<br>
-                주소 : 서울캠퍼스 (03016) 서울시 종로구 홍지문 2길 10 상명대학교 <br>
-                사업자등록번호 : 없음
-            </div>
-        </div>
+                     <div class="privacy" style="float: left;">
+                         <h2>Company Info</h2><br>
+                         <div class="ftcolor">
+                             CS SHOP | 대표자 상명대<br>
+                             주소 : 서울캠퍼스 (03016) 서울시 종로구 홍지문 2길 10 상명대학교 <br>
+                             사업자등록번호 : 없음
+                         </div>
+                     </div>
+                 </div>
 
     </div>
 </body>
