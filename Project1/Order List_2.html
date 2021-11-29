@@ -54,15 +54,6 @@
             margin: auto;
         }
 
-        .face {
-            width: 200px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
-            margin: 0 auto;
-            padding: 15px;
-            text-align: center;
-            border-style: solid;
-            border-width: 2px;
-        }
-
         a:link {
             text-decoration: none;
             color: black;
@@ -83,12 +74,6 @@
             border-width: 3px;
         }
 
-        .picture {
-            padding-top: 20px;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-
         #content_first {
             padding-top: 20px;
             line-height: 10pt;
@@ -104,11 +89,6 @@
             padding-left: 10px;
             height: 50px;
             font-size: 13pt;
-        }
-
-        #content_a {
-            font-size: 20px;
-            text-align: center;
         }
 
         #content {
@@ -371,20 +351,6 @@
             text-align: center;
         }
     </style>
-
-    <script>
-        $(document).ready(function () {
-            $(".resultArea > p").last().hide();
-            var radioContent = $(".resultArea > p");
-            $("input[type='radio']").click(function () {
-                radioContent.hide();
-                radioContent.eq($("input[type='radio']").index(this)).show();
-            });
-        });
-    </script>
-
-    <meta charset="utf-8">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
 <body>
