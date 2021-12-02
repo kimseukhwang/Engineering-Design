@@ -372,20 +372,6 @@
         }
     </style>
 
-    <script>
-        $(document).ready(function () {
-            $(".resultArea > p").last().hide();
-            var radioContent = $(".resultArea > p");
-            $("input[type='radio']").click(function () {
-                radioContent.hide();
-                radioContent.eq($("input[type='radio']").index(this)).show();
-            });
-        });
-    </script>
-
-    <meta charset="utf-8">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
 </head>
 <body>
 
@@ -426,22 +412,6 @@
                                  <label><input type="radio" name="e" value="male">회원 정보와 동일</label>
                                  <label><input type="radio" name="e" value="female">새로운 배송지</label>
                               </div>
-
-                              <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-
-                              <script>
-
-                                  function openZipSearch() {
-                                      new daum.Postcode({
-                                          oncomplete: function (data) {
-                                              $('[name=zip]').val(data.zonecode); // 우편번호 (5자리)
-                                              $('[name=addr1]').val(data.address);
-                                              $('[name=addr2]').val(data.buildingName);
-                                          }
-                                      }).open();
-                                  }
-
-                              </script>
 
 
                               <table>
