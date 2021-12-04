@@ -82,7 +82,7 @@
 
         .face {
             float: right;
-            width: 200px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
+            width: 230px; /* 정렬하려는 요소의 넓이를 반드시 지정 */
             margin: 0 auto;
             padding: 15px;
             text-align: center;
@@ -330,7 +330,7 @@
             </strong> <br><br><br>
 
 
-            <div class="face" , style=" cursor: pointer;" onclick="location.href='';">얼굴 사진 등록하기</div>
+            <div class="face" , style=" cursor: pointer;"  onclick="location.href='Cloth_infor_3.html';">얼굴 사진 등록하기</div>
 
             <form style="float:left;">
                 <strong>SIZE  : </strong>
@@ -340,9 +340,19 @@
                 <input type="radio" name="SIZE" value="XL">XL
             </form>
 
-
-
             <br>
+            <br>
+            <br>
+
+            <form method="post" enctype="multipart/form-data">
+                <div>
+
+                    <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)" style="float:right;">
+                </div>
+
+            </form>
+
+
             <br>
             <br>
             <hr />
@@ -352,7 +362,7 @@
 
 
 
-            <br><br>
+            <br>
 
             <div class="thin" , style=" cursor: pointer;" onclick="location.href='Shop Matching_2.html';">Shop Matching</div>
             <div class="thin" , style=" cursor: pointer;" onclick="location.href='Order List_2.html';">Buy</div>
