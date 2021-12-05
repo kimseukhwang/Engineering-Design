@@ -69,7 +69,7 @@
         .picture {
             padding-top: 50px;
             padding-right: 30px;
-            padding-left: 90px;
+            padding-left: 50px;
         }
 
         #content {
@@ -111,6 +111,27 @@
         .ftcolor {
             color: gray;
         }
+        .list {
+            float: left;
+            font-size: 20px;        
+            height: 800px;
+            margin-top: 20px;
+            list-style: none;
+        }
+
+        .button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -138,6 +159,14 @@
         </nav>
         <div id="content">
             <h2>추천 아이템</h2>
+            <ul class="list">
+                <li><h3 style="padding-left: 15px;">비회원</h3></li>
+                <li>성별 : 남성</li>
+                <li>색상 : 블랙, 그레이</li>
+                <li>종류 : 후드, 아우터</li>
+            <button class="button" onClick="location.href='survey.html'"> 다시하기 </button>
+          
+            </ul>
             <div class="picture" style="float: left;">
                 <a href="Cloth_infor.html">
                     <img src=c49b0ea8658bedd5c88b6b4db1102e55.jpg
