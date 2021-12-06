@@ -52,7 +52,14 @@
             display: block;
             margin: auto;
         }
-
+        .minibox{
+             width: 1300px;
+            height: 500px;
+            border: 1px solid black;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
         .box {
             width: 75%;
             height: 800px;
@@ -225,7 +232,9 @@
                 background-color: #2e9cdf;
                 cursor: pointer;
             }
-
+        .writer{
+          margin-left=1400px;
+        }
         .arrow-left {
             width: 0;
             height: 0;
@@ -239,17 +248,17 @@
     <div id="wrapper">
         <nav class="nav" style="top: 0px;">
             <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="Shop.html">SHOP</a></li>
-                <li><a href="Community.html">COMMUNITY</a></li>
-                <li><a href="survey.html">SURVEY</a></li>
+                <li><a href="about_2.html">ABOUT</a></li>
+                <li><a href="Shop_2.html">SHOP</a></li>
+                <li><a href="Community_2.html">COMMUNITY</a></li>
+                <li><a href="survey_2.html">SURVEY</a></li>
             </ul>
 
-            <div><a href="Cart.html">CART</a></div>
-            <div><a href="MyPage.html">MY PAGE</a></div>
-            <div><a href="join.html">JOIN</a></div>
-            <div><a href="login.html">LOGIN</a></div>
-            <a href="main.html">
+            <div><a href="main.html">로그아웃</a></div>
+            <div><a href="Cart_2.html">CART</a></div>
+            <div><a href="MyPage_2.html">MY PAGE</a></div>
+            <div><a href="MyPage_2.html">홍길동</a></div>
+            <a href="main_2.html">
                 <center>
                     <div>
                         <img src=CS.png
@@ -257,117 +266,35 @@
                     </div>
                 </center>
             </a>
-        </nav>
-        <div id="content">
+        </nav>     
+        
+                   <div id="content">
             <h2 style="margin: 50px 60px 0px 0px; ">Review</h2>
+            <div class="box" style="padding: 10px 10px 10px 10px;">
+                <form action="proc_form.jsp" style="margin-right:80px;">
+                    <div class="star-ratings">
+	<div style="padding-right: 55px;">
+		<span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span>
+	</div>
+</div>
+                    <div style="padding-left: 1230px; font-size: 15px;"> 작성자: 장현호</div>
+                </form><br /><br />              
+                <form style="float: left; padding-left: 50px;">
+                    제목:
+                    <label for="male">데님 청자켓 상품 XXL 사이즈가 맞지 않습니다.</label>                  
+                </form> <br /><br />
+                <form style="float: left;">
+                    <div class="minibox"> 
+                        본문: 데님 청자켓 상품 XXL사이즈를 입어 봤는데 사이즈가 맞지 않습니다.
+                               불편합니다.                   
+                    </div>
+                <div style="padding-left: 1100px;">
+                    2021-11-26 15:22:45
+                </div>
+                </form> <br /><br /><br />
+            </div>
 
-            <br><br>
-            <form>
-                <button style="position:relative; right: 47%; bottom: 1px;" ><a href="login.html">글쓰기</a></button></li>
-            </form>
-            <table>
-                <colgroup>
-                    <col style="width:3%;" />
-                    <col style="width:35%;" />
-                    <col style="width:5%;" />
-                    <col style="width:7%;" />
-                    <col style="width:5%;" />
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>작성자</th>
-                        <th>날짜</th>
-                        <th>조회수</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><a href="Satisfaction.html">데님 청자켓 상품 XXL 사이즈가 맞지 않습니다.</a></td>
-                        <td>장현호</td>
-                        <td>2021-11-26 15:22:45</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><a href="#">상품 문의드립니다!</a></td>
-                        <td>이재경</td>
-                        <td>2021-11-26 15:32:05</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><a href="#">사이즈 때문에 글남깁니다</a></td>
-                        <td>김석황</td>
-                        <td>2021-11-27 13:21:32</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><a href="#">구매페이지 가격과 상품 가격이 다릅니다</a></td>
-                        <td>김용범</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><a href="#">구매페이지 가격과 상품 가격이 다릅니다</a></td>
-                        <td>장현호</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><a href="#">구매페이지 가격과 상품 가격이 다릅니다</a></td>
-                        <td>장현호</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><a href="#">구매페이지 가격과 상품 가격이 다릅니다</a></td>
-                        <td>장현호</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td><a href="#">구매페이지 가격과 상품 가격이 다릅니다</a></td>
-                        <td>장현호</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><a href="#">구매페이지 가격과 상품 가격이 다릅니다</a></td>
-                        <td>장현호</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td><a href="#">구매페이지 가격과 상품 가격이 다릅니다</a></td>
-                        <td>장현호</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
-        <div class="page">
-            <ul class="pagination modal">
-                <li><a href="#" class="first">처음페이지</a></li>
-                <li><a href="#" class="arrow left"><<<</a></li>
-                <li><a href="#" class="active num">1</a></li>
-                <li><a href="#" class="num">2</a></li>
-                <li><a href="#" class="num">3</a></li>
-                <li><a href="#" class="num">4</a></li>
-                <li><a href="#" class="arrow right">>>></a></li>
-                <li><a href="#" class="last">끝 페이지</a></li>
-            </ul>
+            <button class="button" onClick="location.href='Community_2.html'"> 돌아가기 </button>
 
         </div>
     </div>
@@ -410,6 +337,6 @@
         </div>
     </div>
 
-    </div>
+
 </body>
 </html>

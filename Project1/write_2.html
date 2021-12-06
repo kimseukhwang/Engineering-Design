@@ -1,4 +1,4 @@
-
+Ôªø
 
 
 <!DOCTYPE html>
@@ -51,6 +51,15 @@
         .img {
             display: block;
             margin: auto;
+        }
+
+        .minibox {
+            width: 1300px;
+            height: 500px;
+            border: 1px solid black;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-left: 50px;
         }
 
         .box {
@@ -175,7 +184,7 @@
                 text-align: center;
             }
 
-        //º˝¿⁄ Ω∫≈∏¿œ
+        //Ïà´Ïûê Ïä§ÌÉÄÏùº
         .pagination a {
             float: left;
             display: block;
@@ -226,6 +235,10 @@
                 cursor: pointer;
             }
 
+        .writer {
+            margin-left =1400px;
+        }
+
         .arrow-left {
             width: 0;
             height: 0;
@@ -238,18 +251,18 @@
 <body>
     <div id="wrapper">
         <nav class="nav" style="top: 0px;">
-            <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="Shop.html">SHOP</a></li>
-                <li><a href="Community.html">COMMUNITY</a></li>
-                <li><a href="survey.html">SURVEY</a></li>
+            <<ul>
+                <li><a href="about_2.html">ABOUT</a></li>
+                <li><a href="Shop_2.html">SHOP</a></li>
+                <li><a href="Community_2.html">COMMUNITY</a></li>
+                <li><a href="survey_2.html">SURVEY</a></li>
             </ul>
 
-            <div><a href="Cart.html">CART</a></div>
-            <div><a href="MyPage.html">MY PAGE</a></div>
-            <div><a href="join.html">JOIN</a></div>
-            <div><a href="login.html">LOGIN</a></div>
-            <a href="main.html">
+            <div><a href="main.html">Î°úÍ∑∏ÏïÑÏõÉ</a></div>
+            <div><a href="Cart_2.html">CART</a></div>
+            <div><a href="MyPage_2.html">MY PAGE</a></div>
+            <div><a href="MyPage_2.html">ÌôçÍ∏∏Îèô</a></div>
+            <a href="main_2.html">
                 <center>
                     <div>
                         <img src=CS.png
@@ -258,116 +271,48 @@
                 </center>
             </a>
         </nav>
+
         <div id="content">
             <h2 style="margin: 50px 60px 0px 0px; ">Review</h2>
+            <div class="box" style="padding: 10px 10px 10px 10px;">
+                <form action="proc_form.jsp" style="margin-right:80px;">
+                    <form name="myform" id="myform" method="post" action="./save">
+                        <fieldset>
+                            <legend>Î≥ÑÏ†ê</legend>
+                            <label for="rate1">‚≠ê</label><input type="checkbox" name="rating" value="1" id="rate1">
+                            <label for="rate2">‚≠ê</label><input type="checkbox" name="rating" value="2" id="rate2">
+                            <label for="rate3">‚≠ê</label><input type="checkbox" name="rating" value="3" id="rate3">
+                            <label for="rate4">‚≠ê</label><input type="checkbox" name="rating" value="4" id="rate4">
+                            <label for="rate5">‚≠ê</label><input type="checkbox" name="rating" value="5" id="rate5">
+                        </fieldset>
+                    </form>
 
-            <br><br>
-            <form>
-                <button style="position:relative; right: 47%; bottom: 1px;" ><a href="login.html">±€æ≤±‚</a></button></li>
-            </form>
-            <table>
-                <colgroup>
-                    <col style="width:3%;" />
-                    <col style="width:35%;" />
-                    <col style="width:5%;" />
-                    <col style="width:7%;" />
-                    <col style="width:5%;" />
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>π¯»£</th>
-                        <th>¡¶∏Ò</th>
-                        <th>¿€º∫¿⁄</th>
-                        <th>≥Ø¬•</th>
-                        <th>¡∂»∏ºˆ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><a href="Satisfaction.html">µ•¥‘ √ª¿⁄ƒœ ªÛ«∞ XXL ªÁ¿Ã¡Ó∞° ∏¬¡ˆ æ Ω¿¥œ¥Ÿ.</a></td>
-                        <td>¿Â«ˆ»£</td>
-                        <td>2021-11-26 15:22:45</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><a href="#">ªÛ«∞ πÆ¿«µÂ∏≥¥œ¥Ÿ!</a></td>
-                        <td>¿Ã¿Á∞Ê</td>
-                        <td>2021-11-26 15:32:05</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><a href="#">ªÁ¿Ã¡Ó ∂ßπÆø° ±€≥≤±È¥œ¥Ÿ</a></td>
-                        <td>±ËºÆ»≤</td>
-                        <td>2021-11-27 13:21:32</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><a href="#">±∏∏≈∆‰¿Ã¡ˆ ∞°∞›∞˙ ªÛ«∞ ∞°∞›¿Ã ¥Ÿ∏®¥œ¥Ÿ</a></td>
-                        <td>±ËøÎπ¸</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><a href="#">±∏∏≈∆‰¿Ã¡ˆ ∞°∞›∞˙ ªÛ«∞ ∞°∞›¿Ã ¥Ÿ∏®¥œ¥Ÿ</a></td>
-                        <td>¿Â«ˆ»£</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><a href="#">±∏∏≈∆‰¿Ã¡ˆ ∞°∞›∞˙ ªÛ«∞ ∞°∞›¿Ã ¥Ÿ∏®¥œ¥Ÿ</a></td>
-                        <td>¿Â«ˆ»£</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><a href="#">±∏∏≈∆‰¿Ã¡ˆ ∞°∞›∞˙ ªÛ«∞ ∞°∞›¿Ã ¥Ÿ∏®¥œ¥Ÿ</a></td>
-                        <td>¿Â«ˆ»£</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td><a href="#">±∏∏≈∆‰¿Ã¡ˆ ∞°∞›∞˙ ªÛ«∞ ∞°∞›¿Ã ¥Ÿ∏®¥œ¥Ÿ</a></td>
-                        <td>¿Â«ˆ»£</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><a href="#">±∏∏≈∆‰¿Ã¡ˆ ∞°∞›∞˙ ªÛ«∞ ∞°∞›¿Ã ¥Ÿ∏®¥œ¥Ÿ</a></td>
-                        <td>¿Â«ˆ»£</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td><a href="#">±∏∏≈∆‰¿Ã¡ˆ ∞°∞›∞˙ ªÛ«∞ ∞°∞›¿Ã ¥Ÿ∏®¥œ¥Ÿ</a></td>
-                        <td>¿Â«ˆ»£</td>
-                        <td>2021-11-28 17:45:00</td>
-                        <td>24</td>
-                    </tr>
+                </form><br /><br />
+                <form style="float: left; padding-left: 50px;">
+                    Ï†úÎ™©:
+                    <input type="text" style="
+    width: 1200px;
+    height: 20px;
+">
+                </form> <br /><br />
+                              <p style="
+    padding-right: 1285px;
+">Î≥∏Î¨∏:</p>
+                <form style="float: left;">
+                    
+                    <textarea style=" width: 1200px; height: 400px; margin-left: 100px; ">
 
-                </tbody>
-            </table>
-        </div>
-        <div class="page">
-            <ul class="pagination modal">
-                <li><a href="#" class="first">√≥¿Ω∆‰¿Ã¡ˆ</a></li>
-                <li><a href="#" class="arrow left"><<<</a></li>
-                <li><a href="#" class="active num">1</a></li>
-                <li><a href="#" class="num">2</a></li>
-                <li><a href="#" class="num">3</a></li>
-                <li><a href="#" class="num">4</a></li>
-                <li><a href="#" class="arrow right">>>></a></li>
-                <li><a href="#" class="last">≥° ∆‰¿Ã¡ˆ</a></li>
-            </ul>
+</textarea>
+                </form>
+
+            </div>
+                    
+                </form> <br /><br /><br />
+            </div>
+
+            <button class="button" onClick="location.href='Community_2.html'" style="
+    margin-left: 870px;
+"> Îì±Î°ùÌïòÍ∏∞ </button>
 
         </div>
     </div>
@@ -379,9 +324,9 @@
             <h2>CS Center</h2><br>
             <div class="ftcolor">
                 02- 2238-3804<br>
-                ∆Ú¿œ AM 10:00- PM 4:00<br>
-                ¡°Ω… PM 1:00- PM 2:00<br>
-                »ﬁπ´ ¡÷∏ª&∞¯»ﬁ¿œ »ﬁπ´
+                ÌèâÏùº AM 10:00- PM 4:00<br>
+                Ï†êÏã¨ PM 1:00- PM 2:00<br>
+                Ìú¥Î¨¥ Ï£ºÎßê&Í≥µÌú¥Ïùº Ìú¥Î¨¥
             </div>
 
 
@@ -389,27 +334,27 @@
         <div class="privacy" style="float: left;">
             <h2>Bank Info</h2>
             <div class="ftcolor">
-                ªÛ∏Ì¿∫«‡ 123-45678-90123<br>
-                CS¿∫«‡ 454645-01-123123<br>
-                øπ±›¡÷ : ∞¯º≥¿‘<br><br>
+                ÏÉÅÎ™ÖÏùÄÌñâ 123-45678-90123<br>
+                CSÏùÄÌñâ 454645-01-123123<br>
+                ÏòàÍ∏àÏ£º : Í≥µÏÑ§ÏûÖ<br><br>
             </div>
 
-            <strong>πËº€æ»≥ª</strong><br><br>
+            <strong>Î∞∞ÏÜ°ÏïàÎÇ¥</strong><br><br>
             <div class="ftcolor">
-                CS≈√πË 1234-1234
+                CSÌÉùÎ∞∞ 1234-1234
             </div>
         </div>
 
         <div class="privacy" style="float: left;">
             <h2>Company Info</h2><br>
             <div class="ftcolor">
-                CS SHOP | ¥Î«•¿⁄ ªÛ∏Ì¥Î<br>
-                ¡÷º“ : º≠øÔƒ∑∆€Ω∫ (03016) º≠øÔΩ√ ¡æ∑Œ±∏ »´¡ˆπÆ 2±Ê 10 ªÛ∏Ì¥Î«–±≥ <br>
-                ªÁæ˜¿⁄µÓ∑œπ¯»£ : æ¯¿Ω
+                CS SHOP | ÎåÄÌëúÏûê ÏÉÅÎ™ÖÎåÄ<br>
+                Ï£ºÏÜå : ÏÑúÏö∏Ï∫†ÌçºÏä§ (03016) ÏÑúÏö∏Ïãú Ï¢ÖÎ°úÍµ¨ ÌôçÏßÄÎ¨∏ 2Í∏∏ 10 ÏÉÅÎ™ÖÎåÄÌïôÍµê <br>
+                ÏÇ¨ÏóÖÏûêÎì±Î°ùÎ≤àÌò∏ : ÏóÜÏùå
             </div>
         </div>
     </div>
 
-    </div>
+
 </body>
 </html>
